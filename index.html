@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+
+    <style>
+        table {
+            width: 100%;
+            max-width: 700px;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #888;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e8f0e5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Odin Recipes</h1>
+        <p>A collection of delicious homemade recipes.</p>
+    </header>
+
+    <nav>
+        <h2>Recipe Collection</h2>
+        <ul>
+            <li><a href="recipes/adobo.html">Chicken Adobo</a></li>
+            <li><a href="recipes/mango-float.html">Mango Float</a></li>
+            <li><a href="recipes/sinigang.html">Sinigang na Baboy</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Welcome to Odin Recipes!</h2>
+            <p>
+                Explore these delicious recipes and discover
+                some popular Filipino dishes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Recipe Information</h2>
+
+            <table>
+                <caption>Overview of Our Recipes</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Recipe Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Main Ingredient</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Chicken Adobo</td>
+                        <td>Main Dish</td>
+                        <td>Chicken</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mango Float</td>
+                        <td>Dessert</td>
+                        <td>Mango</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sinigang na Baboy</td>
+                        <td>Main Dish</td>
+                        <td>Pork</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Watch Our Mango Float Recipe</h2>
+
+            <p>
+                Learn how to prepare a delicious Filipino Mango Float!
+            </p>
+
+            <video width="500" controls>
+                <source src="videos/Filipino%20Mango%20Float%20Recipe.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section>
+            <h2>Recipe Feedback Form</h2>
+
+            <p>We would love to hear your thoughts about our recipes!</p>
+
+            <form action="#" method="get">
+
+                <label for="visitor-name">Your Name:</label>
+                <br>
+                <input type="text" id="visitor-name"
+                       name="visitor-name"
+                       placeholder="Enter your name"
+                       required>
+                <br><br>
+
+                <label for="recipe">Choose a Recipe:</label>
+                <br>
+                <select id="recipe" name="recipe" required>
+                    <option value="">Select a recipe</option>
+                    <option value="Chicken Adobo">Chicken Adobo</option>
+                    <option value="Mango Float">Mango Float</option>
+                    <option value="Sinigang na Baboy">Sinigang na Baboy</option>
+                </select>
+                <br><br>
+
+                <label for="rating">Rate Our Recipe:</label>
+                <br>
+                <select id="rating" name="rating" required>
+                    <option value="">Choose a rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Poor</option>
+                </select>
+                <br><br>
+
+                <label for="comment">Your Comments:</label>
+                <br>
+                <textarea id="comment" name="comment"
+                          rows="5" cols="40"
+                          placeholder="Write your feedback here..."
+                          required></textarea>
+                <br><br>
+
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Odin Recipes | ITE 10 HTML Project</p>
+    </footer>
+
+</body>
+</html>
