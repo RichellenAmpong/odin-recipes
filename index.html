@@ -1,67 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
-
-    <style>
-        table {
-            width: 100%;
-            max-width: 700px;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td {
-            border: 1px solid #888;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #e8f0e5;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f5f5f5;
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <h1>Odin Recipes</h1>
-        <p>A collection of delicious homemade recipes.</p>
+        <p>A collection of delicious homemade Filipino recipes.</p>
     </header>
-
-    <nav>
-        <h2>Recipe Collection</h2>
-        <ul>
-            <li><a href="recipes/adobo.html">Chicken Adobo</a></li>
-            <li><a href="recipes/mango-float.html">Mango Float</a></li>
-            <li><a href="recipes/sinigang.html">Sinigang na Baboy</a></li>
-        </ul>
-    </nav>
 
     <main>
 
         <section>
             <h2>Welcome to Odin Recipes!</h2>
             <p>
-                Explore these delicious recipes and discover
-                some popular Filipino dishes.
+                Explore these delicious homemade recipes and discover
+                some popular Filipino dishes that you can enjoy with your family.
             </p>
+        </section>
+
+        <section>
+            <h2>My Filipino Recipes</h2>
+
+            <article>
+                <h2>Chicken Adobo</h2>
+
+                <img src="images/chicken%20adobo.webp"
+                     alt="Homemade Chicken Adobo"
+                     width="300">
+
+                <p>
+                    A popular Filipino dish made with chicken
+                    simmered in soy sauce, vinegar, garlic, and spices.
+                </p>
+
+                <a href="recipes/adobo.html">View Chicken Adobo Recipe</a>
+            </article>
+
+            <article>
+                <h2>Mango Float</h2>
+
+                <img src="images/mangofloat.jpg"
+                     alt="Delicious Filipino Mango Float"
+                     width="300">
+
+                <p>
+                    A sweet and refreshing Filipino dessert
+                    made with ripe mangoes, cream, and graham crackers.
+                </p>
+
+                <a href="recipes/mango-float.html">View Mango Float Recipe</a>
+            </article>
+
+            <article>
+                <h2>Sinigang na Baboy</h2>
+
+                <img src="images/Sinigangnababoy.jpg"
+                     alt="Filipino Sinigang na Baboy"
+                     width="300">
+
+                <p>
+                    A traditional Filipino sour soup made with pork,
+                    vegetables, and a flavorful tamarind-based broth.
+                </p>
+
+                <a href="recipes/sinigang.html">View Sinigang na Baboy Recipe</a>
+            </article>
+
         </section>
 
         <section>
             <h2>Recipe Information</h2>
 
-            <table>
-                <caption>Overview of Our Recipes</caption>
-
+            <table border="1">
                 <thead>
+                    <tr>
+                        <th colspan="3">Overview of Our Recipes</th>
+                    </tr>
                     <tr>
                         <th scope="col">Recipe Name</th>
                         <th scope="col">Category</th>
@@ -75,13 +93,11 @@
                         <td>Main Dish</td>
                         <td>Chicken</td>
                     </tr>
-
                     <tr>
                         <td>Mango Float</td>
                         <td>Dessert</td>
                         <td>Mango</td>
                     </tr>
-
                     <tr>
                         <td>Sinigang na Baboy</td>
                         <td>Main Dish</td>
@@ -92,62 +108,69 @@
         </section>
 
         <section>
-            <h2>Watch Our Mango Float Recipe</h2>
-
-            <p>
-                Learn how to prepare a delicious Filipino Mango Float!
-            </p>
-
-            <video width="500" controls>
-                <source src="videos/Filipino%20Mango%20Float%20Recipe.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
-        </section>
-
-        <section>
             <h2>Recipe Feedback Form</h2>
 
-            <p>We would love to hear your thoughts about our recipes!</p>
+            <p>
+                We would love to hear your thoughts about our recipes!
+                Please complete the form below.
+            </p>
 
             <form action="#" method="get">
 
-                <label for="visitor-name">Your Name:</label>
-                <br>
-                <input type="text" id="visitor-name"
-                       name="visitor-name"
-                       placeholder="Enter your name"
-                       required>
-                <br><br>
+                <p>
+                    <label for="visitor-name">Your Name:</label>
+                    <br>
+                    <input type="text"
+                           id="visitor-name"
+                           name="visitor-name"
+                           placeholder="Enter your name"
+                           required>
+                </p>
 
-                <label for="recipe">Choose a Recipe:</label>
-                <br>
-                <select id="recipe" name="recipe" required>
-                    <option value="">Select a recipe</option>
-                    <option value="Chicken Adobo">Chicken Adobo</option>
-                    <option value="Mango Float">Mango Float</option>
-                    <option value="Sinigang na Baboy">Sinigang na Baboy</option>
-                </select>
-                <br><br>
+                <p>
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email address"
+                           required>
+                </p>
 
-                <label for="rating">Rate Our Recipe:</label>
-                <br>
-                <select id="rating" name="rating" required>
-                    <option value="">Choose a rating</option>
-                    <option value="5">5 - Excellent</option>
-                    <option value="4">4 - Very Good</option>
-                    <option value="3">3 - Good</option>
-                    <option value="2">2 - Fair</option>
-                    <option value="1">1 - Poor</option>
-                </select>
-                <br><br>
+                <p>
+                    <label for="recipe">Which Recipe Are You Reviewing?</label>
+                    <br>
+                    <select id="recipe" name="recipe" required>
+                        <option value="">Select a recipe</option>
+                        <option value="Chicken Adobo">Chicken Adobo</option>
+                        <option value="Mango Float">Mango Float</option>
+                        <option value="Sinigang na Baboy">Sinigang na Baboy</option>
+                    </select>
+                </p>
 
-                <label for="comment">Your Comments:</label>
-                <br>
-                <textarea id="comment" name="comment"
-                          rows="5" cols="40"
-                          placeholder="Write your feedback here..."
-                          required></textarea>
-                <br><br>
+                <p>
+                    <label for="rating">How Would You Rate This Recipe?</label>
+                    <br>
+                    <select id="rating" name="rating" required>
+                        <option value="">Choose a rating</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comment">Your Comments:</label>
+                    <br>
+                    <textarea id="comment"
+                              name="comment"
+                              rows="5"
+                              cols="40"
+                              placeholder="Share your thoughts about the recipe..."
+                              required></textarea>
+                </p>
 
                 <button type="submit">Submit Feedback</button>
 
